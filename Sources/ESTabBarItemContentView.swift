@@ -245,13 +245,13 @@ open class ESTabBarItemContentView: UIView {
                                                width: titleLabel.bounds.size.width,
                                                height: titleLabel.bounds.size.height)
                 imageView.frame = CGRect.init(x: (w - s) / 2.0,
-                                              y: (h - s) / 2.0 - 6.0,
+                                              y: (h - imageHeight) / 2.0 - 6.0,
                                               width: s,
                                               height: imageHeight)
             }
         } else if !imageView.isHidden {
             imageView.frame = CGRect.init(x: (w - s) / 2.0,
-                                          y: (h - s) / 2.0,
+                                          y: (h - imageHeight) / 2.0,
                                           width: s,
                                           height: imageHeight)
         } else if !titleLabel.isHidden {
